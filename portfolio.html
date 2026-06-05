@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Etudiant en developpement</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <p class="hero-tag">BTS SIO SLAM - CFA INSTA Paris</p>
+    <h1>Thierry Kenaka</h1>
+    <p>
+      Portfolio d'un etudiant en developpement informatique : profil,
+      competences, projets interactifs et veille technologique sur
+      l'intelligence artificielle generative.
+    </p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#profil">Profil</a></li>
+      <li><a href="#competences">Competences</a></li>
+      <li><a href="#projets">Projets</a></li>
+      <li><a href="#veille">Veille technologique</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="profil">
+      <h2>Profil</h2>
+      <div class="intro">
+        <p>
+          Je m'appelle Thierry Kenaka, j'ai 19 ans et je suis en premiere annee
+          de BTS SIO option SLAM au CFA INSTA, situe dans le 5eme arrondissement
+          de Paris. Je suis passionne par le developpement web et la creation
+          d'applications interactives. J'aime apprendre de nouvelles technologies
+          et les utiliser pour realiser des projets concrets.
+        </p>
+      </div>
+    </section>
+
+    <section id="competences">
+      <h2>Competences</h2>
+      <div class="skills">
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">Algorithmique</span>
+        <span class="skill">Developpement web</span>
+        <span class="skill">Veille technologique</span>
+        <span class="skill">Organisation</span>
+        <span class="skill">Autonomie</span>
+      </div>
+    </section>
+
+    <section id="projets">
+      <h2>Projets</h2>
+      <div class="grid">
+        <article class="card project-card">
+          <h3>Projet Flappy Bird</h3>
+          <p>
+            Clique ou appuie sur espace pour faire sauter le joueur et eviter
+            les obstacles.
+          </p>
+          <div class="game-panel">
+            <div class="game-info">
+              <span>Score : <strong id="flappy-score">0</strong></span>
+              <button type="button" id="flappy-restart">Relancer</button>
+            </div>
+            <canvas id="flappy-game" width="360" height="260" aria-label="Jeu Flappy Bird"></canvas>
+            <p class="project-status" id="flappy-message">Pret a jouer</p>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <h3>Projet Calculatrice</h3>
+          <p>
+            Utilise cette calculatrice pour faire les operations de base :
+            addition, soustraction, multiplication et division.
+          </p>
+          <div class="calculator" aria-label="Calculatrice">
+            <output id="calculator-display">0</output>
+            <div class="calculator-buttons">
+              <button type="button" data-action="clear">C</button>
+              <button type="button" data-action="delete">DEL</button>
+              <button type="button" data-operator="/">/</button>
+              <button type="button" data-operator="*">x</button>
+              <button type="button" data-number="7">7</button>
+              <button type="button" data-number="8">8</button>
+              <button type="button" data-number="9">9</button>
+              <button type="button" data-operator="-">-</button>
+              <button type="button" data-number="4">4</button>
+              <button type="button" data-number="5">5</button>
+              <button type="button" data-number="6">6</button>
+              <button type="button" data-operator="+">+</button>
+              <button type="button" data-number="1">1</button>
+              <button type="button" data-number="2">2</button>
+              <button type="button" data-number="3">3</button>
+              <button type="button" data-action="equals" class="equals">=</button>
+              <button type="button" data-number="0" class="zero">0</button>
+              <button type="button" data-number=".">.</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="veille">
+      <h2>Veille technologique : l'IA generative</h2>
+      <div class="veille">
+        <div class="timeline">
+          <article>
+            <h3>C'est quoi une veille technologique ?</h3>
+            <p>
+              Une veille technologique consiste a rechercher, suivre et analyser
+              regulierement les nouveautes d'un domaine. Elle permet de rester a
+              jour sur les outils, les methodes, les tendances, les risques et les
+              bonnes pratiques. En informatique, c'est important car les
+              technologies evoluent vite et il faut savoir adapter ses
+              connaissances.
+            </p>
+          </article>
+
+          <article>
+            <h3>Qu'est-ce qu'une IA generative ?</h3>
+            <p>
+              Une intelligence artificielle generative est une technologie capable
+              de produire du contenu a partir d'une demande : texte, image, code,
+              audio, video ou idees. Elle apprend a partir de grandes quantites de
+              donnees pour proposer des reponses ou des creations adaptees au
+              contexte donne par l'utilisateur.
+            </p>
+          </article>
+
+          <article>
+            <h3>Comment j'organise ma veille</h3>
+            <p>
+              J'ai automatise ma veille grace a une newsletter. Cela me permet de
+              recevoir regulierement les nouveautes importantes sur l'IA generative :
+              nouveaux outils, evolutions des modeles, usages professionnels,
+              limites, risques et bonnes pratiques. Cette organisation me permet de
+              rester informe sans devoir chercher manuellement les informations tous
+              les jours.
+            </p>
+          </article>
+
+          <article>
+            <h3>Pourquoi je reste a jour</h3>
+            <p>
+              L'IA generative evolue tres rapidement. En suivant une newsletter
+              specialisee, je peux comparer les innovations, identifier les outils
+              utiles et comprendre les tendances du moment. Cette veille me permet
+              donc d'actualiser mes connaissances et de ne pas rester bloque sur
+              des technologies anciennes.
+            </p>
+          </article>
+
+          <article>
+            <h3>Ce que cette veille m'apporte</h3>
+            <p>
+              Dans mon travail, cette veille m'aide a gagner du temps, a trouver
+              des idees, a ameliorer mon code et a mieux comprendre les nouvelles
+              pratiques du developpement. Dans ma vie personnelle, elle m'apprend
+              a utiliser l'IA avec plus de recul, a verifier les informations et a
+              mieux comprendre les changements que cette technologie apporte dans
+              la societe.
+            </p>
+          </article>
+        </div>
+
+        <div class="newsletter-proof">
+          <h3>Exemples de newsletters recues</h3>
+          <div class="mail-grid">
+            <article class="mail-shot">
+              <div class="mail-top">
+                <span class="mail-dot"></span>
+                <span class="mail-dot"></span>
+                <span class="mail-dot"></span>
+              </div>
+              <div class="mail-header">
+                <span>Newsletter IA Generative</span>
+                <strong>Recu</strong>
+              </div>
+              <p class="mail-subject">Nouveaux outils IA pour generer du texte, des images et du code</p>
+              <p>
+                Au programme : nouveaux modeles, automatisation, usages dans le
+                developpement web et bonnes pratiques pour verifier les resultats.
+              </p>
+            </article>
+
+            <article class="mail-shot">
+              <div class="mail-top">
+                <span class="mail-dot"></span>
+                <span class="mail-dot"></span>
+                <span class="mail-dot"></span>
+              </div>
+              <div class="mail-header">
+                <span>Actu Intelligence Artificielle</span>
+                <strong>Recu</strong>
+              </div>
+              <p class="mail-subject">Les tendances IA a suivre cette semaine</p>
+              <p>
+                Cette newsletter presente les evolutions des assistants IA, les
+                risques lies aux donnees et des exemples d'utilisation en entreprise.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="intro">
+        <p>
+          Vous pouvez me contacter pour echanger sur mes projets, mon parcours ou
+          mes competences en developpement informatique.
+        </p>
+        <p>
+          Telephone : <a href="tel:0762621266">07 62 62 12 66</a>
+        </p>
+        <p>
+          Email : <a href="mailto:christkenaka@gmail.com">christkenaka@gmail.com</a>
+        </p>
+        <p>
+          GitHub : <a href="https://github.com/christkenaka" target="_blank" rel="noopener">github.com/christkenaka</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Portfolio realise en HTML, CSS et JavaScript</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
